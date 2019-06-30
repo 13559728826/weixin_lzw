@@ -14,7 +14,7 @@
 		<div>
 			${book.name }
 			<%-- 此处把路径的一部分作为参数来使用，这才符合REST规范 --%>
-			<a href="/zhh_1/library/debit/remove/${book.id }">删除</a>
+			<a href="/lzw/library/debit/remove/${book.id }">删除</a>
 		</div>
 	</c:forEach>
 </body>
