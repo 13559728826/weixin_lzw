@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>菜单管理</title>
-<link rel="stylesheet" href="/zhh_1/menu/css/menu.css"/>
+<link rel="stylesheet" href="/lzw/menu/css/menu.css"/>
 </head>
 <body>
 <div class="main-container">

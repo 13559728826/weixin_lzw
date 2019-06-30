@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>借阅列表</title>
-<link href="/zhh_1/library/css/main.css" rel="stylesheet" />
+<link href="/lzw/library/css/main.css" rel="stylesheet" />
 </head>
 <body>
 	<c:forEach items="${debitList.books }" var="book">
