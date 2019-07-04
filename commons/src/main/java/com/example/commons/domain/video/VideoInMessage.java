@@ -8,8 +8,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import com.example.commons.domain.InMessage;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@XmlAccessorType(XmlAccessType.FIELD) // JAXB从字段获取配置信息
-@XmlRootElement(name="xml") // JAXB读取XML时根元素名称
+@XmlAccessorType(XmlAccessType.FIELD) 
+@XmlRootElement(name="xml") 
 public class VideoInMessage extends InMessage {
 
 	/**

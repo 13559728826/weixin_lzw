@@ -18,6 +18,5 @@ public class SelfMenuApplication implements EventListenerConfig {
 
 	@Override
 	public void handle(EventInMessage msg) {
-		// 目前此模块不处理任何消息，所以这里留空即可
 	}
 }

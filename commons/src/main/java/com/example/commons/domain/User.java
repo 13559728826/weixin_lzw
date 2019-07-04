@@ -21,10 +21,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @Table(name = "wx_user")
 public class User {
 
-	@Id // 表示一个主键
-	@GenericGenerator(name = "uuid2", strategy = "uuid2") // 定义Hibernate的主键生成器
-	@GeneratedValue(generator = "uuid2") // 使用名为uuid2的主键生成器
-	@Column(length = 36) // 指定列的长度
+	@Id 
+	@GenericGenerator(name = "uuid2", strategy = "uuid2") 
+	@GeneratedValue(generator = "uuid2") 
+	@Column(length = 36) 
 	private String id;
 
 	public static enum Status {
@@ -44,7 +44,7 @@ public class User {
 	 * 关注的时间
 	 */
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "sub_time") // 指定列名
+	@Column(name = "sub_time") 
 	private Date subTime;
 	/**
 	 * 取消关注的时间
@@ -90,7 +90,7 @@ public class User {
 	private String groupId;
 	/** 用户被打上的标签ID列表 */
 	@JsonProperty("tagid_list")
-	@Transient // 暂时不需要保存到数据库
+	@Transient 
 	private String[] tagIdList;
 	/**
 	 * 返回用户关注的渠道来源，ADD_SCENE_SEARCH 公众号搜索，ADD_SCENE_ACCOUNT_MIGRATION

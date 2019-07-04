@@ -5,7 +5,7 @@ import com.example.commons.domain.OutMessage;
 public class TextOutMessage extends OutMessage {
 
 	public static class TextContent {
-		// 文本内容
+		
 		private String content;
 
 		public String getContent() {

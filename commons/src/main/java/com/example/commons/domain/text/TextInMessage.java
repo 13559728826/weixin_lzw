@@ -33,7 +33,7 @@ public class TextInMessage extends InMessage {
 		this.content = content;
 	}
 
-	// 如果想要打印一些有含义的信息出来，必须要重写此方法，否则只能打印一个内存地址
+
 	@Override
 	public String toString() {
 		return "TextInMessage [content=" + content + ", getToUserName()=" + getToUserName() + ", getFromUserName()="

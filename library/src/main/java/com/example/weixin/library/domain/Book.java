@@ -17,10 +17,10 @@ public class Book {
 	private String id;
 
 	private String name;
-	private int storage;// 库存
-	private String description;// 详细描述
-	private String image;// 封面
-	private boolean disabled;// 是否下架
+	private int storage;
+	private String description;
+	private String image;
+	private boolean disabled;
 
 	public String getId() {
 		return id;

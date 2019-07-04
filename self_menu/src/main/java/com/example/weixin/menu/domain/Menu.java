@@ -15,18 +15,17 @@ import javax.persistence.Transient;
 
 import org.hibernate.annotations.GenericGenerator;
 
-// 这里就是一个个的按钮
+
 @Entity
 @Table(name = "wx_self_menu_button")
 public class Menu {
 
-	@Id // 表示一个主键
-	@GenericGenerator(name = "uuid2", strategy = "uuid2") // 定义Hibernate的主键生成器
-	@GeneratedValue(generator = "uuid2") // 使用名为uuid2的主键生成器
-	@Column(length = 36) // 指定列的长度
+	@Id 
+	@GenericGenerator(name = "uuid2", strategy = "uuid2") 
+	@GeneratedValue(generator = "uuid2") 
+	@Column(length = 36) 
 	private String id;
-	// 这个属性，最终要被转换为发送给微信公众号的sub_button属性
-	@OneToMany(cascade = CascadeType.ALL) // 一个自定义菜单里面有多个按钮
+	@OneToMany(cascade = CascadeType.ALL) 
 	@JoinColumn(name = "parent_id")
 	private List<Menu> subMenus = new LinkedList<>();
 
